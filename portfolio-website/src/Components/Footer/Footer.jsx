@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="footer-bottom-right">
             <p>Term of Services</p>
             <p>Privacy Policy</p>
-            <p>Connect with Us</p>
+            <p>Connect with U</p>
         </div>
       </div>
     </div>
