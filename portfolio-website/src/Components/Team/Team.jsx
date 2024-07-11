@@ -53,7 +53,7 @@ const Team = () => {
       <div className='team-box mywork'>
         <div className="title-box" data-aos="fade-up">
           <h1>Our Team</h1>
-          <img src={theme_pattern} alt="" />
+          {/* <img src={theme_pattern} alt="" /> */}
         </div>
       </div>
 

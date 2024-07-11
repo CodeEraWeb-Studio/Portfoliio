@@ -8,6 +8,8 @@ import Footer from './Components/Footer/Footer';
 import Team from './Components/Team/Team';
 import Preloader from './Components/Preloader/Preloader';
 import './Components/Preloader/Preloader.css'
+import About from './Components/About/About';
+import Contact2 from './Components/Contact2/Contact2';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -28,10 +30,11 @@ const App = () => {
     <div>
       <Navbar />
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <MyWork />
+      <About/>
       <Team />
-      <Contact />
+      <Contact2/>
       <Footer />
     </div>
   );

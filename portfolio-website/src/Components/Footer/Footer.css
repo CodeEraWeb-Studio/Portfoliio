@@ -18,10 +18,11 @@
 }
 .footer-top-left a{
     text-decoration: none;
-    color: #11F428;
+    /* color: #11F428; */
+    color: white;
 }
 .footer-top-left a:hover{
-    color: #fff;
+    color:  #F9CE31;
     transform: scale(1.5);
     transition: 0.4s;
 }
@@ -49,10 +50,13 @@
     width: 22px;
 }
 .footer-subscribe{
-    font-size: 16px;
-    padding: 18px 40px;
+    font-size: 18px;
+    padding: 12px 32px;
     border-radius: 50px;
-    background: linear-gradient(264deg, #11F428  -5.09%, #126f1b  106.28%);
+    /* background: linear-gradient(264deg, #11F428  -5.09%, #126f1b  106.28%); */
+    background:  #F9CE31;
+    color: black;
+    font-family: 600;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -65,6 +69,11 @@
     display: flex;
     gap: 30px;
     margin-bottom: 10px;
+    cursor: pointer;
+    color:  #F9CE31;
+}
+.footer-bottom-right p:hover {
+    color: white;
 }
 .footer-email-input:hover{
     border: 2px solid white;
@@ -72,6 +81,7 @@
 .footer-subscribe:hover{
     transform: scale(1.1);
     transition: 0.3s;
+    background-color: white;
 }
 @media(max-width:768px){
     .footer{

@@ -8,17 +8,20 @@
 
 .hero h1{
     text-align: center;
-    width: 65%;
+    /* width: 65%; */
     font-size: 45px;
     font-weight: 600;
     line-height: 70px;
+    /* background-color: red; */
 }
 .bt_img{
     width: 80rem;
     margin-bottom: 120px;
 }
 .hero h1 span{
-    background: linear-gradient(270deg, #11F428 10%, #64ff74 100%);
+    /* background: linear-gradient(270deg, #11F428 10%, #64ff74 100%); */
+    /* background:   #11F428; */
+    background:   #F9CE31;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -39,18 +42,52 @@
 .hero-connect{
     padding: 15px 20px;
     border-radius: 5px;
-    background: linear-gradient(#11F428 50%, #057410 10%,#11F428 40%);
+    /* background: linear-gradient(#11F428 50%, #057410 10%,#11F428 40%); */
+    /* background:  #11F428; */
+    background: #F9CE31;
+    /* background:  #F9CE31; */
     cursor: pointer;
+    transition: .2s linear all;
+}
+.hero-connect{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
 }
 .hero-resume{
-    padding: 12px 20px;
-    border-radius: 50px;
+    padding: 15px 20px;
+    border-radius: 25px;
     border: 2px solid #fff;
     cursor: pointer;
+    transition: .2s linear all;
+
 }
-.hero-connect:hover{
+.hero-resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 7px; */
+}
+/* .hero-connect:hover{
     transform: scale(1.1);
     transition: ease-in-out 0.3s;
+} */
+.hero-connect:hover{
+    background-color:  white;
+    box-shadow: 0 0 5px  white;
+    transform: scale(1.05);
+}
+.hero-resume:hover{
+    background-color: white;
+    box-shadow: 0 0 5px white;
+    transform: scale(1.05);
+    color: black;
+    border: none;
+}
+.hero-resume:hover .anchor-link{
+    color: black;
 }
 @media(max-width:768px){
     .bt_img{
@@ -91,3 +128,26 @@
         font-size: 12px;
     }
 }
+
+.typing-demo {
+    /* background-color: red; */
+    width: 22ch;
+    animation: typing 4s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #11F428;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

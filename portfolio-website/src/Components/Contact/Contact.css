@@ -22,7 +22,8 @@
 .contact-left h1{
     font-size: 50px;
     font-weight: 700;
-    background: linear-gradient(270deg, #11F428 80%, #0f7519 100%);
+    /* background: linear-gradient(270deg, #11F428 80%, #0f7519 100%); */
+    background: #F9CE31;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -75,19 +76,22 @@
 
 .contact-submit{
     border: none;
-    color: white;
-    border-radius: 50px;
-    background: linear-gradient(264deg, #11F428 5.09%, #0d931b 106.28%);
+    color: black;
+    border-radius: 20px;
+    /* background: linear-gradient(264deg, #11F428 5.09%, #0d931b 106.28%); */
+    background:#F9CE31;
     font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .3px;
     padding: 18px 40px;
     margin-bottom: 50px;
     margin-top: 15px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s linear all;
 }
 .contact-submit:hover{
     transform: scale(1.1);
-    transition: 0.3s;
+    background: white;
 }
 
 /* progressbar*/

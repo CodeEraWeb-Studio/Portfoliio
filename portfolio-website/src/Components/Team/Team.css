@@ -2,22 +2,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 13px;
 }
 
 .boxer span{
     font-size: 25px;
     text-transform: capitalize;
+    color: #F9CE31;
 }
 
 .imgs{
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     overflow: hidden;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 .imgs img{
-    width: 15rem;
+    width: 10rem;
 }
 
 .boxer p::before{
@@ -34,13 +35,13 @@
 }
 .soc-icon a{
     text-decoration: none;
-    color: #11F428;
+    color: white;
     font-size: 26px;
 }
 
 .soc-icon a:hover{
-    color: white;
-    transform: scale(1.5);
+    color: #F9CE31 ;
+    transform: scale(1.2);
     transition: 0.4s;
 }
 .soc-icon{

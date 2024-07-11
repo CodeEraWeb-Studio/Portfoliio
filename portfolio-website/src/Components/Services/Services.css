@@ -15,12 +15,31 @@
     border: 2px solid #11F428;
     transition: 0.4s;
     cursor: pointer;
+    position: relative;
+}
+.services-format:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
 }
 .services-container{
+    width: 80%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
     margin-bottom: 50px;
+    position: relative;
 }
 .title-box h1{
     font-size: 12;
@@ -84,3 +103,4 @@
         gap: 20px;
     }
 }
+

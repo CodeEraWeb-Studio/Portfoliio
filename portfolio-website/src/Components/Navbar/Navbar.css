@@ -14,16 +14,25 @@
 .nav-connect{
     padding: 15px 20px;
     border-radius: 50px;
-    background: linear-gradient(267deg, #4dfc5e 0.36%, #11F428 102.06%);
+    /* background: #11F428; */
+    background:   #F9CE31;
     font-size: 16px;
     cursor: pointer;
     transition: 0.5s;
+}
+.nav-connect:hover .anchor-link{
+    color: black;
+}
+.nav-connect .anchor-link{
+    color: black;
 }
 .logo{
     width: 280px;
 }
 .nav-connect:hover{
+    background-color: white;
     transform: scale(1.05);
+    box-shadow: 0 0 5px  white;
 }
 .nav-menu li{
     display: flex;
@@ -39,6 +48,12 @@
 .anchor-link{
     text-decoration: none;
     color: white;
+}
+.anchor-link:hover{
+    /* text-shadow: 0 0 10px #11F428 ; */
+    transform: scale(1.05);
+    color: #F9CE31;
+    /* color:   #11F428; */
 }
 .nav-mob-close{
     display: none;
