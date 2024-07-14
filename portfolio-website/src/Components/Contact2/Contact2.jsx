@@ -1,6 +1,8 @@
 import React from 'react'
 import '../Contact2/Contact2.css'
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
 
 const Contact2 = () => {
   return (
@@ -12,8 +14,11 @@ const Contact2 = () => {
         </div>
 
         <div className="contact2-right">
-        <button className="contact-submit2">Contact us <BsArrowRight size={25}/>
+          <Link to="/contact" id='contact-btn2'>
+          <button  className="contact-submit2">Contact us <BsArrowRight size={25}/>
         </button>
+          </Link>
+        
         </div>
     </div>
   )

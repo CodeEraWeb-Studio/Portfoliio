@@ -6,11 +6,15 @@ import location_icon from '../../assets/location_icon.svg';
 import call_icon from '../../assets/call_icon.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
+import { BsArrowRight } from "react-icons/bs";
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import Footer from '../Footer/Footer';
 
 const Contact = () => {
 
   useEffect(() =>{
-    AOS.init({duration: "1000"});
+    AOS.init({duration: "1500"});
   },[]);
 
   const [formValues, setFormValues] = useState({
@@ -66,7 +70,13 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className='contact' >
+    <div id='contact' className='contact' data-aos="fade-up" >
+        <div className="nav" data-aos="fade-up">
+      <div className='logo'>Code<span>Era.</span></div>
+      <Link to='/' className='back-Homepage'>
+      <button className="back-to-home-page"> Back to Home Page  <BsArrowRight size={20} /> </button>
+      </Link>
+      </div>
       {(isSubmitting || isSubmitted) && (
         <div className="progress-container">
           {isSubmitting && <p className="progress-message">Progress...</p>}
@@ -76,11 +86,11 @@ const Contact = () => {
           </div>
         </div>
       )}
-      <div className="title-box" data-aos="fade-up">
+      {/* <div className="title-box" data-aos="fade-up">
         <h1>Get in touch</h1>
         <img src={theme_pattern} alt="" />
-      </div>
-      <div className="contact-section">
+      </div> */}
+      <div className="contact-section" data-aos="fade-up">
         <div className="contact-left" data-aos="fade-up">
             <h1>Let's talk</h1>
             <p>We're currently available to take on new projects, so feel free to send us a message about anything that you want us to work on. You can contact us anytime.</p>
@@ -89,14 +99,14 @@ const Contact = () => {
                     <img src={mail_icon} alt="" /> <p>codeeraws@yahoo.com</p>
                 </div>
                 <div className="contact-detail" data-aos="fade-up">
-                    <img src={call_icon} alt="" /> <p>+91 6397123694, +91 7252058269</p>
+                    <img src={call_icon} alt="" /> <p>+91 6397123694, +91 9149098087</p>
                 </div>
                 <div className="contact-detail" data-aos="fade-up">
                     <img src={location_icon} alt="" /> <p>Haldwani - 263139, India</p>
                 </div>
             </div>
         </div>
-        <form onSubmit={onSubmit} className="contact-right">
+        <form onSubmit={onSubmit} className="contact-right" data-aos="fade-up">
             <label htmlFor="name" data-aos="fade-up">Your Name</label>
             <input 
               type="text" 
@@ -117,19 +127,21 @@ const Contact = () => {
               onChange={handleChange}
               data-aos="fade-up" 
             />
-            <label htmlFor="message" data-aos="fade-up">Write your message here</label>
+            <label htmlFor="message" data-aos="fade-up">Write your message here.</label>
             <textarea 
               name="message" 
               id="message" 
               rows="8" 
-              placeholder='Enter your message' 
+              placeholder='Want to connect with us, please write it here.' 
               value={formValues.message} 
               onChange={handleChange} 
               data-aos="fade-up"
             ></textarea>
-            <button type='submit' className="contact-submit" data-aos="fade-up">Submit Now</button>
+            <button type='submit' className="contact-submit">Submit Now</button>
         </form>
+            
       </div>
+      {/* <Footer/> */}
     </div>
   );
 }

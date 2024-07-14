@@ -10,32 +10,46 @@ import Preloader from './Components/Preloader/Preloader';
 import './Components/Preloader/Preloader.css'
 import About from './Components/About/About';
 import Contact2 from './Components/Contact2/Contact2';
+import { BrowserRouter , Routes , Route } from 'react-router-dom'
+import LandingPage from './Components/LandingPage/LandingPage';
+import OurWork from './Components/OurWork/OurWork';
+
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  // const [loading, setLoading] = useState(true);
 
-  if (loading) {
-    return <Preloader />;
-  }
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 1500);
+
+  //   return () => clearTimeout(timer);
+  // }, []);
+
+  // if (loading) {
+  //   return <Preloader />;
+  // }
 
   return (
     <div>
-      <Navbar />
+      {/* <OurWork/> */}
+    <BrowserRouter>
+    <Routes>
+    <Route path='/' element={<LandingPage/>}/>
+    <Route path='/contact' element={<Contact/>}/>
+    </Routes>
+    </BrowserRouter>    
+
+
+      {/* <Navbar />
       <Hero />
-      {/* <Services /> */}
       <MyWork />
       <About/>
       <Team />
       <Contact2/>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

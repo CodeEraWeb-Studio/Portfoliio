@@ -16,7 +16,7 @@ const MyWork = () => {
   },[]);
 
   return (
-    <div id='work' className='mywork'>
+    <div id='work' className='mywork'  data-aos="fade-up">
       <div className="title-box-work"  data-aos="fade-up">
         <h2>The projects of our <span>CodeEra agency</span> </h2>
         {/* <img src={theme_pattern} alt="" /> */}
@@ -25,7 +25,7 @@ const MyWork = () => {
       <div className="mywork-container">
           {
             mywork_data.map((work , index)=>{
-              return <div className='project-Wrapper' data-aos="fade-up">
+              return <div key={index} className='project-Wrapper' data-aos="fade-up">
               <div className="project-image">
                 <img src={work.w_img} alt="error" />
               </div>
@@ -50,7 +50,7 @@ const MyWork = () => {
         })} */}
         {/* <img key={index} src={work.w_img} alt="" data-aos="fade-up" /> */}
       </div>
-      <div className="mywork-showmore" data-aos="fade-up">
+      <div className="mywork-showmore">
         <p>Show More</p>
         <img src={arrow_icon} alt="Error" />
       </div>

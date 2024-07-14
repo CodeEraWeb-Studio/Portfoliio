@@ -1,23 +1,40 @@
-.mywork{
+.OurWork-Wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* background: white; */
+    padding: 0rem 5rem;
+}
+.work-leftbox{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
-    align-items: center;
     justify-content: center;
-    gap: 40px;
-    margin: 20px 10%;
-    font-family: 'outfit';
+    align-items: flex-start;
+    padding: 0rem 2rem;
+    gap: 1rem;
 }
-.title-box-work{
+.project-img{
+    width: 90%;
+    height: 60%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-img img{
     width: 100%;
 }
-.title-box-work h2{
-    width: 30%;
-    font-size: 3.2rem;
+.work-leftbox h2{
+    /* width: 30%; */
+    font-size: 3rem;
     font-weight: 400;
 }
-.title-box-work h2 span{
+.work-leftbox h2 span{
     color: #F9CE31;
+    font-size: 3.9rem;
 }
 .underline{
     width: 100%;
@@ -25,25 +42,39 @@
     background-color: #F9CE31 ;
 }
 
-
-
+.work-rightbox{
+    width: 50%;
+    height: 100%;
+    overflow:scroll;
+    margin-top: 2rem;
+    /* padding-bottom: 4rem; */
+}
+.work-rightbox::-webkit-scrollbar {
+    display: none;
+}
 
 .mywork-container{
     width: 100%;
     height: 100%;
     /* background-color: rebeccapurple; */
     margin: 0 auto;
-    gap: 30px;
+    gap: 2.5rem;
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     /* align-items: center; */
     flex-wrap: wrap;
     margin: 1rem 0 ;
-    
+    padding: 1rem 2rem;    
+    /* margin-bottom: 6rem; */
+}
+.space{
+    width: 100%;
+    height: 15vh;
 }
 .mywork-container .project-Wrapper{
-    width: 47%;
-    height: 60vh;
+    width: 100%;
+    height: 75vh;
     background-color: #222;
     position: relative;
     transition: .2s linear all;
@@ -78,7 +109,7 @@
     width: 100%;
     padding: 10px 20px;
     font-size: 2rem;
-    margin-top: 7px;
+    margin-top: 1rem;
 
 }
 .project-Wrapper .tool-wrapper{
@@ -86,7 +117,7 @@
     padding: 5px 20px;
     display: flex;
     gap: 7px;
-    margin-top: 5px;
+    margin-top: 1rem;
 
 
 }
@@ -99,7 +130,7 @@
 }
 .project-Wrapper .tool-btn{
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     left: 5%;
     outline: none;
     border: none;

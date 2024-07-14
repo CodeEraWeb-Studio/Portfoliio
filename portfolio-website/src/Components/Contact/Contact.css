@@ -1,17 +1,47 @@
 .contact{
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 80px;
-    margin: 80px 10%;
+    margin: 5% 0; 
+}
+
+/* Contact-Page-Nav */
+.nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+.back-to-home-page{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.back-to-home-page:hover{
+    color: #F9CE31;
+    transform: scale(1.03);
+}
+.back-Homepage{
+    text-decoration: none;
 }
 
 .contact-section{
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
+    /* margin: 0 10%; */
+    /* margin-bottom: 1rem; */
 }
 .contact-left{
     display: flex;
@@ -55,6 +85,7 @@
     flex-direction: column;
     align-items: start;
     gap: 15px;
+    /* margin-bottom: 2rem; */
 }
 
 .contact-right label{
@@ -77,15 +108,15 @@
 .contact-submit{
     border: none;
     color: black;
-    border-radius: 20px;
+    border-radius: 3px;
     /* background: linear-gradient(264deg, #11F428 5.09%, #0d931b 106.28%); */
     background:#F9CE31;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: .3px;
-    padding: 18px 40px;
+    padding: 10px 20px;
     margin-bottom: 50px;
-    margin-top: 15px;
+    margin-top: 10px;
     cursor: pointer;
     transition: 0.3s linear all;
 }
@@ -93,6 +124,8 @@
     transform: scale(1.1);
     background: white;
 }
+
+
 
 /* progressbar*/
 .progress-container {
@@ -108,6 +141,8 @@
     flex-direction: column; 
     align-items: center;
     z-index: 1000;
+
+
   }
   
   .progress-container .progress-message {

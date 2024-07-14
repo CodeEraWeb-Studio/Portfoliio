@@ -27,6 +27,9 @@
     color: #A09E9F;
 
 }
+.contact2-right #contact-btn2{
+    text-decoration: none;
+}
 .contact2-right{
     width: 40%;
     height: 100%;
@@ -46,13 +49,15 @@
     padding: 15px 25px;
     margin-right: 2rem;
     cursor: pointer;
-    transition: 0.3s linear all;
+    transition: 0.2s linear all;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    text-decoration: underline;
 }
 .contact-submit2:hover{
     transform: scale(1.05);
     background: white;
+    font-style: italic;
 }

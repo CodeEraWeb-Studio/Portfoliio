@@ -65,6 +65,9 @@
     justify-content: space-between;
     font-size: 16px;
 }
+.footer-bottom-left{
+    color:  #F9CE31;
+}
 .footer-bottom-right{
     display: flex;
     gap: 30px;
@@ -76,7 +79,8 @@
     color: white;
 }
 .footer-email-input:hover{
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    transform: scale(1.05);
 }
 .footer-subscribe:hover{
     transform: scale(1.1);

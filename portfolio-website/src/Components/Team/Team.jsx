@@ -49,7 +49,7 @@ const Team = () => {
   ];
 
   return (
-    <div id='team-about' className="team">
+    <div id='team-about' className="team" data-aos="fade-up">
       <div className='team-box mywork'>
         <div className="title-box" data-aos="fade-up">
           <h1>Our Team</h1>
